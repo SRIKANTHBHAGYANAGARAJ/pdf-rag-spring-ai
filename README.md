@@ -208,8 +208,7 @@ pdf-rag-prd/
 You're using an old Spring AI artifact name. This project uses the correct **Spring AI 1.0.0** names:
 `spring-ai-starter-model-openai` and `spring-ai-pdf-document-reader`. Run `mvn -U clean package` to refresh.
 
-**`./mvnw is not recognized` (Windows PowerShell)**
-Use `mvn` or `mvnw.cmd` instead of `./mvnw`.
+
 
 **Embedding/index step fails (401 / model not found on embeddings)**
 OpenRouter may not serve an embeddings endpoint for your key. Point embeddings at a provider that does (e.g. OpenAI) while keeping OpenRouter for chat — set a separate base-url/key for the embedding client, or switch `spring.ai.openai.*` to OpenAI for embeddings.
